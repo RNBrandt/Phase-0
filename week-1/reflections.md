@@ -1,31 +1,60 @@
-# 1.1 Think About Time Reflection
+##How does tracking and adding changes make developers' lives easier?
+Tracking the changes made during programming makes developers' lives easier because as each change is made to the code it is saved along with a message describing what implementation of the code is meant to accomplish.  This provides coders with the tools required to effectivly turn on and off any change that's made to the  code.
+##What is a commit?
+A commit is essentially a checkpoint for the data to be saved. In microsoft programs it would be command S, but because coding is often done collaborativly, in increadibly complex environments a commit saves in a more specific way, with more specific information.
+##What are the best practices for commit messages?
+Commit messages should be short with verbs in the imperative tense.  Imperative is important, rather than describing what you did in the commit code, it is meant to describe what will happen if the code is implemented.
 
-(note: this is not ready for review)
+Other best practices include.
 
-I have taken several courses regarding time management and methods to increase productivity, so this was primarily a review.  It did, however, help reinforce several methods that I had let slip.   The power of habit, establishing good habits and allowing myself to let the habit begin to help me define myself, was of particular use.  Additionally, ‘Time Boxing” (the practice of setting a very specific amount of time aside to focus on accomplishing a specific task) has proven its worth in my life again and again.  Time in an office, or at work can certainly be considered a form of time boxing (assuming one works the way one’s boss wants), but without that structure in Phase 0 imposing structure on my work schedule (ie time boxing) will be crucial to my success.
+//- a short <50 charachter summary
 
-I don’t have a day job at the moment, so managing my time currently, is more a practice of finding ways to spend all my free time rather than ways to cram activities into a busy schedule.  This allows me to read, ride my bike, and still comfortably spend as much time as needed on Phase 0.  Now, this doesn’t lend itself to a particularly efficient use of time, but for the time being, I have time to spare.  At the moment my strategy is working, but as my time becomes more precious I plan to employ the time management techniques.  Although, now that I reflect on it, now is the perfect time to establish proper habits. So, my overall plan for Phase 0 time management is to use the growth mindset to help me attempt different practices and eventually establish great time management habits (such as using the Pomodoro technique, to help me focus within my ‘time boxes’)  in preparation for the later part of Phase 0 and the initiation of Phase 1 and beyond.
+//- more detailed explanatory text if necessary
 
-# The Command Line
+//- Bullet points can be used if there is a space after the bullet.
 
-(note this is not ready for review)
+//- Hanging indents should also be used.
 
-*A Shell is any piece of software that allows the user to interface with the operating system.  OSX is the graphical user interface (GUI) shell software for my Mac computer.  Like OSX Bash is a type of shell program, however, it’s text and command based rather than graphical.
+##What does the HEAD^ argument mean?
 
-*I’m very used to GUIs so it was difficult for me to contextualize what I was doing in Bash.  It really helped to have the GUI open so I can watch the changes happen and create a system of command synonyms for myself.
+The HEAD^ argument is the Git way of describing the last commit.  This is important as you can have many commits and HEAD^ is easier to remember than HEAD~1, HEAD~2, HEAD~3 etc...
 
-*I was able to do everything in the exercises, but I’m still not 100% sure what some of the commands actually do.  Particularly the pipes (<,>, |) I’m going to give myself a break with these commands and give it another go in a day or two.
-*For the moment pwd, ls, and cd are the most important.  With those two I can find where I am know what the files and documents in the directory are, and move between them.  I’m sure that will change as I become more adept at utilizing this functionality, but for the moment these are the most useful to me.
+##What are the 3 stages of a git change and how do you move a file from one stage to the other?
 
-*Pwd, print working directory it displays where you are in the computers directory.
+-Stage 1 is 'Modified'.  A modified file is either a new or modified file that has not yet been committed to git.  This doesn't mean it hasn't been saved locally, in fact it's the opposite, these files have been saved locally, but not marked to be included in the next commit.  This is done simply by creating or working with a file you plan to commit.
 
-*ls, (I remember it as list) and it displays the contents of the working directory
+Stage 2 is 'Staged'. Staged means you have marked a new or modified file to be committed in your next commit. the command for this is git add <filename>
 
-*mv, I didn’t remember off the top of my head, but reviewing the content tells me that it’s move or rename files.  I had trouble using this one, and I’ll have to review it in a day or so.
+Stage 3 is 'Committed'.  A file that has been committed has been included in your git repository with a commit message describing what the commit is meant to do.  This is done through the command list described in the following question.
 
-*Cd, change directory- does exactly what it’s an abrieviation for.
+##Write a handy cheatsheet of the commands you need to commit your changes?
+git add- stages a file to be committed
 
-*../ goes with cd, it changes the directory to the file above it in the tree.
+git commit -m "message here" assuming the file has been staged for commit, this command commits the change.
 
-# 1.4 Forking and Cloning
-(note this is not ready for review)
+git checkout master- checks on the master branch
+
+git pull origin master- pulls the master file
+
+git checkout <feature-branch-name>- navigates to your feature branch.
+
+git merge master- merges any changes from the master file into your feature branch
+
+-git push origin <feature-branch-name>- pushes the changes from the local copy to the remote repository)
+
+##What is a pull request and how do you create and merge one?
+-A pull request gathers the most recent version of the file you're working with.  This ensures the code you commit includes all changes by any member of the team.  A pull request is created with the following commands.
+git checkout master- This simply moves your working directory to the master rather than any working folder you may be in.
+
+git pull origin master- This pulls the master file, and shows any changes between your file and the master.
+
+git checkout <feature-branch-name>- This navigates you back to the feature you're working on.
+
+git pull origin master - This merges the most recent master into your file.
+
+git push origin <feature-branch-name>- This pushes the file to a remote fork to be checked, before it is further incorperated into the master file.
+
+git branch -d <feature-branch-name>- This merges your changes into the master branch, and is the last step in a pull request.
+
+##Why are pull requests preferred when working with teams?
+-Pull requests gather the most recent version of the code you're working with.  If you're working by yourself, (assuming you follow reasonabl file practices) you can be conifident that you're using the newest and best version of your code.  When you're working with a team that may not be the case so you want to be sure to pull the newest version of the project before merging your changes.  This also ensures you don't accidentally conflate two separate commits.
