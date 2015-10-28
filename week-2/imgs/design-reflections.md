@@ -2,7 +2,7 @@
 
 # Reflections 2.3
 
-##1.  What are the 6 Phases of Web Design?
+##1. What are the 6 Phases of Web Design?
 
 1) Information Gathering.  This is where you learn what the requirements will be for the website.
 2) Planning. Create an outline based on what you learned in step 1
