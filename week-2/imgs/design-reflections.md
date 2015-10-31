@@ -1,4 +1,4 @@
-![Alt text](Site-Map)
+<img src= "Site-Map.png">
 
 # Reflections 2.3
 
