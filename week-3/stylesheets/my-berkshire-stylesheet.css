@@ -42,3 +42,22 @@ span {
     max-width: 100px;
     max-height: 200px;
 }
+
+/*
+<!--
++- What is important to know when linking an external file (like a stylesheet) to an HTML file?
++
++There are several important things to know when linking an external file, the most important of which is the location of the file you're linking to.  Additionally you want to ensure everything is properly formatted for the document you're linking it to (in the case of stylesheets), or is appropriately sized ( made into the proper size) in the case of images.
++
++-What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it.
++
++Using chrome's dev-tools was very useful while I was positioning the elements.  I feel that if I had depended on refreshing each time, I probably would have lost my mind.
++
++- Did you modify the HTML to include classes or ids?  If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
++
++I did use div classes, but not ids.  We used the same format several times across the file, so we used classes for those occasions.   We didn't use Ids because there weren't any unique formatting requirements for this file.
++
++-When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
++
++It seemed like my site and and actual site had similar code.Based on what I saw, it looks like we were both fairly clean, and both followed close to best practices.  I think my code was a little weaker when it comes to resizing the image, but overall, I would like to think I did a pretty good job!
+*/
