@@ -45,11 +45,11 @@ array = [[1,2], ["inner", ["eagle", "par", ["FORE", "hook"]]]]
 
 number_array = [5, [10, 15], [20,25,30], 35]
 
-number_array= number_array.flatten.map{
+number_array= number_array.flatten.map!{
   |number|  number += 5
 }
 
-# We would like to find a way to make this destructive but couldn't
+#
 
 
 # Bonus:

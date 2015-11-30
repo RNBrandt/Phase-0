@@ -1,28 +1,30 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent [4] hours on this challenge.
 
 
 # Release 0: Pseudocode
 # Outline:
-
+=begin
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
-  #fill in the outline here
+
+Create an ARRAY of the letters and select a method to randomly SAMPLE that array.
 
 # Check the called column for the number called.
-  #fill in the outline here
+  Because it's an array of arrays we first need to call a method to get into the initial array. Once we do that we can create IF Statements to determine if the number is in the right column
+
 
 # If the number is in the column, replace with an 'x'
-  #fill in the outline here
+  IF BOTH requirements are met, we only need to replace the  value
 
 # Display a column to the console
-  #fill in the outline here
+  use a p comand
 
 # Display the board to the console (prettily)
-  #fill in the outline here
+ use a p comand
 
 # Initial Solution
-=begin
+
 class BingoBoard
 
   def initialize(board)
