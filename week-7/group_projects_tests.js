@@ -1,0 +1,2 @@
+//Person 1
+As a user I need tests that will take a list of numbers and return the mean, median, and mode of all the numbers on the list.  These programs must be able to accomodate lists of varying size.
