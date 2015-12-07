@@ -1,9 +1,9 @@
 
 // JavaScript Olympics
 
-// I paired [by myself, with:] on this challenge.
+// I paired [by myself, with: Luis] on this challenge.
 
-// This challenge took me [#] hours.
+// This challenge took me [0.5] hours.
 
 
 // Warm Up
@@ -68,3 +68,6 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 
 // Reflection
+// 1) I firmed up my knowledge of creating functions, and working with objects.
+// 2) constructor functions similar to a traditional object, except that they remain unique and will cannot be easily changed... I think, I need to use them more to understand how they should be used.
+// 3) Constructors seem to be similar to classes and class variables.  Dear grader, if you have a better understanding of this please let me know in your comment (or link to your answer) THANKS!!
