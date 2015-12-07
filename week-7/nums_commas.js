@@ -45,3 +45,10 @@ function separateComma(number){
 
 
 // Reflection
+//1) No, I continued the same process of thinking though a problem and working it.  Of course the tools are different, which required a different solution, but the process was more or less the same.
+
+//2) It's not nearly as simple as it is in Ruby
+
+//3) Because there aren't as many built in methods you have to think about how some of the tools from Ruby work, and deconstruct them into constituent parts.
+
+//4) toString, length, split, join, and console.log
