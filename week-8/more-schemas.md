@@ -6,4 +6,4 @@ A many to many database is when two tables have related information, but there i
 
 So far everything makes sense conceptually about database schemas.  The only real trick I expect is making sure that everything has a unique identifier, and everything is as connected as possible.
 
-![Schema diagram](/images/Screen Shot 2015-12-15 at 6.38.32 PM.png)
+![Schema diagram](images/Screen Shot 2015-12-15 at 6.38.32 PM.png)
