@@ -9,6 +9,8 @@
 9) SELECT * FROM regions WHERE region_name LIKE '%Central%';
 10) SELECT regions.region_name, states.state_name FROM states INNER JOIN regions ON states.region_id=regions.id ORDER BY regions.id;
 
+
+![my schema](/Screen Shot 2015-12-15 at 6.06.45 PM.png)
 Reflection
 
 Databases allow data to be connected through the use of tables and various identifiers.
